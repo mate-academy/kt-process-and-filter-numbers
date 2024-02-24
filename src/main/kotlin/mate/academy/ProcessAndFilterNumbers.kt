@@ -1,5 +1,9 @@
 package mate.academy
 
+const val TWO = 2
+const val ZERO = 0
+const val TWENYFIVE = 25
+
 fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
-    return numbers.map { if (it % 2 == 0) it / 2 else it * 2 }.filter { it > 25 }
+    return numbers.map { if (it % TWO == ZERO) it / TWO else it * TWO }.filter { it > TWENYFIVE }
 }
