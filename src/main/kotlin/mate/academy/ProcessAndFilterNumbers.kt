@@ -1,5 +1,5 @@
 package mate.academy
 
 fun processAndFilterNumbers(numbers: List<Int>) = numbers
-    .map {if (it % 2 == 0) it / 2 else it * 2}
+    .map { if (it % 2 == 0) it / 2 else it * 2 }
     .filter { it > 25 }
