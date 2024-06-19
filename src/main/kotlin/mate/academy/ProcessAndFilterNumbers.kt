@@ -1,10 +1,9 @@
 package mate.academy
 
+const val BOUNDARY = 25
+
 fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
-    val two = 2
-    val zero = 0
-    val bounder = 25
     return numbers
-        .map { if (it % two == zero) it / two else it * two }
-        .filter { it > bounder }
+        .map { if (it % 2 == 0) it / 2 else it * 2 }
+        .filter { it > BOUNDARY }
 }
