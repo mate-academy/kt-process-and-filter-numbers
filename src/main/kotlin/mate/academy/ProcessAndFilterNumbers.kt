@@ -1,7 +1,9 @@
 package mate.academy
 
 fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
+    val divider = 2
+    val bounder = 25
     return numbers
-        .map { if (it % 2 == 0) it / 2 else it * 2 }
-        .filter { it > 25 }
+        .map { if (it % divider == 0) it / divider else it * divider }
+        .filter { it > bounder }
 }
