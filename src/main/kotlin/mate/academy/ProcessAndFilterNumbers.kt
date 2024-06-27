@@ -1,5 +1,6 @@
 package mate.academy
 
+const val MIN_VALUE = 25
 fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
    return numbers.map {
         if (it % 2 == 0) {
@@ -7,5 +8,5 @@ fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
         } else {
             it * 2
         }
-   }.filter { it > 25 }
+   }.filter { it > MIN_VALUE}
 }
