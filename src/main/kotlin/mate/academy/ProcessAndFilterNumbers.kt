@@ -1,5 +1,7 @@
 package mate.academy
 
+const val THRESHOLD = 25
+
 fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
     val tem = mutableListOf<Int>()
     for (i in 0 until numbers.size) {
@@ -8,8 +10,8 @@ fun processAndFilterNumbers(numbers: List<Int>): List<Int> {
         } else {
             tem.add(numbers[i] / 2)
         }
-
     }
-    val toList = tem.asSequence().filter { it > 25 }.toList()
+
+    val toList = tem.asSequence().filter { it > THRESHOLD }.toList()
     return toList
 }
